@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="./styles/formulario.css">
+</head>
+
+<body>
+    <header>
+        <h1>Registrate e inicia en el mundo del Desarrollo Web</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+                <li><a href="precios.html">Precios</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="./img/HTML5_Logo.png" alt="CursoHTML">
+        </div>
+    </header>
+
+        <h1>Ingresa tus datos para empezar una nueva experiencia</h1>
+        <form>
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono de contacto:</label>
+            <input type="tel" id="telefono" name="telefono">
+
+            <label for="curso">Curso de interés:</label>
+            <select id="curso" name="curso" required>
+                <option value="desarrollo_web">Desarrollo Web</option>
+                <option value="diseno_grafico">Diseño Gráfico</option>
+                <option value="marketing_digital">Marketing Digital</option>
+            </select>
+
+            <label for="comentarios">Comentarios (opcional):</label>
+            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+            <input type="submit" value="Registrarse">
+        </form>
+</body>
+
+</html>
